@@ -2,7 +2,7 @@
 
 在 `next.js` 脚手架基础上增加了
 
-1. windicss
+1. tailwindCSS
 2. prisma
 
 以及增加了读写数据库的示例。
@@ -12,13 +12,13 @@
 首先安装依赖
 
 ```bash
-yarn
+pnpm i
 ```
 
-初始化 `prisma client`
+然后初始化 `prisma client`，执行下面命令
 
 ```bash
-yarn prisma db push
+pnpm prisma db push
 ```
 
 会将 `schema.prisma` 表结构同步到 `app.db`，并且生成 `node_modules/.prisma` 代码。
